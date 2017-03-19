@@ -1,7 +1,7 @@
 
 /*背景大子*/
 #overall{
-	width:1000px;
+	width:100%;
 	min-height: 100px;/*最小高度*/
 	overflow: hidden;/*高度随内容*/
 	position: absolute;/*绝对定位，左上无边距*/
@@ -12,19 +12,18 @@
 
 /*导航部分*/
 #navigation{
-	width:1000px;/*如果加上position:absolute;就不是块标签，不能标准流*/
+	width:100%;/*如果加上position:absolute;就不是块标签，不能标准流*/
 	height: 48px;
 	background-color: #333333;
 }
 #navigation img{
 	width: 105px;
-	margin-left:30px;/*添加外边距*/
-
+	margin-left:3%;/*添加外边距*/
 }
 #navigation ul{	
 	display: inline;/*转成内联元素，与<img>不换行*/
 	position: absolute;/*绝对定位后竟然垂直居中了*/
-	right: 30px;	/*绝对定位后四个方位定位*/
+	right: 4%;	/*绝对定位后四个方位定位*/
 }
 #navigation ul li{
 	display: inline;/*转成内联元素，与<li>之间不换行*/
@@ -44,8 +43,8 @@
 #essay{
 	border-right: 3px solid #848484;/*一点阴影边框*/
 	border-bottom: 3px solid #848484;
-	margin:15px auto;/*上下20px 左右自动居中*/
-	width: 960px;
+	margin:15px auto;/*上下15px 左右自动居中*/
+	width: 98%;
 	min-height:100px; /*最小高度*/
 	overflow: hidden;/*如何处理边框的属性，比较复杂，随内容加高*/
 	background-color: #FFFFFF;
@@ -109,7 +108,7 @@
 	border-right: 3px solid #848484;/*一点阴影边框*/
 	border-bottom: 3px solid #848484;
 	margin:15px auto;/*上下20px 左右自动居中*/
-	width: 960px;
+	width: 98%;
 	min-height:100px; /*最小高度*/
 	overflow: hidden;/*如何处理边框的属性，比较复杂，随内容加高*/
 	background-color: #FFFFFF;
@@ -118,14 +117,14 @@
 	font-size: 20px;
 	font-weight: bolder;
 	padding: 12px 15px;
+	text-align: center;
 }
 	/*盒子里面的图片*/
 .image{
 	border:1px solid #DCDCDC;
 	width:300px;
 	overflow: hidden;
-	margin-top: 20px;
-	margin-left: 120px;
+	margin: 20px auto;
 }
 .image p{
 	text-align: center;
@@ -154,7 +153,7 @@
 	border-right: 3px solid #848484;/*一点阴影边框*/
 	border-bottom: 3px solid #848484;
 	margin:15px auto;/*上下20px 左右自动居中*/
-	width: 960px;
+	width: 98%;
 	min-height:100px; /*最小高度*/
 	overflow: hidden;/*如何处理边框的属性，比较复杂，随内容加高*/
 	background-color: #FFFFFF;

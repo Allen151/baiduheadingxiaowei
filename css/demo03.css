@@ -1,7 +1,7 @@
 
 /*新样式，盒子大小不包括padding与border*/
 *{
-	-webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box;/*加入这三行代码，盒子的大小是另一种计算方法了*/
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	padding:20px;	/*全部元素都填充20个像素*/
@@ -83,7 +83,6 @@
 	border:2px solid #999;/*边框都是这样*/
 }
 .person{
-	border:2px solid #999;/*边框都是这样*/
 	padding:0px;/*全局变量中有一个padding，此处要改变，下面有很多变量都是这样*/
 	margin-bottom:20px;
 }

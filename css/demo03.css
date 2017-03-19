@@ -1,0 +1,103 @@
+
+/*新样式，盒子大小不包括padding与border*/
+*{
+	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	padding:20px;	/*全部元素都填充20个像素*/
+}
+
+/*背景的样式*/
+#overall{
+	width: 100%;	/*用比例的方式控制总盒子的宽度*/
+	min-height: 200px;	/*最小高度*/
+	overflow: auto;		/*高度随内容增加*/
+	/*   margin: 0 auto;	width:100%;一定的padding了不用设置也居中了。	整个盒子居中*/
+	background-color: #EEEEEE;
+	border:2px solid #999;/*边框都是这样*/
+}
+
+/*文章内容*/
+#conten{
+	background-color: #fff;
+	border:2px solid #999;/*边框都是这样*/
+	margin: 0px 140px 10px 220px;		/*边距*/
+}
+#conten h1{
+	font-size: 18px;
+
+}
+#conten h2{
+	font-size: 14px;
+	
+}
+#conten p{
+	font-size: 12px;
+	text-indent: 2em;
+	line-height:150%;
+}
+#conten a{
+	text-decoration: none;
+	padding: 0px;
+}
+#conten a:hover{
+	color:red;
+}
+
+/*左边团队介绍内容*/
+#team{
+	float: left;/*左浮后就变成行内元素*/
+	width: 200px;/*固定宽度*/
+	min-height: 100px;/*最小高度*/
+	overflow: hidden;	/*高度随内容*/
+	background-color: #fff;
+	border:2px solid #999;/*边框都是这样*/
+}
+#team img{
+	border:2px solid #999;/*边框都是这样*/
+	padding:0px;
+	float: left;
+	width:80px;
+	height: 80px;
+}
+#team h1{
+	font-size: 18px;
+	padding: 0px;
+	margin: 0px;
+}
+#team p{
+	font-size: 14px;
+	padding: 0px;
+	margin: 0px;
+	text-indent: 2em;
+}
+
+
+/*右边队员的介绍*/
+#player{
+	width:120px;	/*定宽*/
+	min-height:100px;/*最小高度*/
+	overflow:auto;/*高度随内容*/
+	float: right;/*右浮动，成了行内元素*/
+	background-color: #fff;
+	border:2px solid #999;/*边框都是这样*/
+}
+.person{
+	border:2px solid #999;/*边框都是这样*/
+	padding:0px;/*全局变量中有一个padding，此处要改变，下面有很多变量都是这样*/
+	margin-bottom:20px;
+}
+.person p{
+	margin: 0px;
+	padding:0px;
+	font-size: 12px;
+	text-align: center;
+}
+.person img{
+	margin: 0px;
+	padding:0px;
+	width:80px;
+	height: 80px;
+	margin:0 auto;
+}
+

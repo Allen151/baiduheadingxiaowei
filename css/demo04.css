@@ -13,15 +13,16 @@
 	position: absolute;
 	left:-50%;
 	top:-50%;
+    overflow: hidden;/*重点，超出的内容隐藏*/
 }
 .left-top{
 	width:100px;
 	height: 100px;
 	background-color: #FFCC00;
 	position: absolute;
-	left:-50px;
+	left:-50px;/*移动中心达到所需要的位置*/
 	top:-50px;
-	border-radius: 100%;
+	border-radius: 100%;/*变成圆*/
 }
 .right-bottom{
 	width:100px;

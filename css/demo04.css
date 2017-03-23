@@ -1,0 +1,34 @@
+
+#overall{/*绝对定位，让其成为参照物，左上点位于浏览器的中心*/
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	left:50%;
+	top:50%;
+}
+#center{/*相对于参照物移动，使中心与参照物左上心对照达到居中的目的。注意两框大小要一致*/
+	background-color: #ccc;
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	left:-50%;
+	top:-50%;
+}
+.left-top{
+	width:100px;
+	height: 100px;
+	background-color: #FFCC00;
+	position: absolute;
+	left:-50px;
+	top:-50px;
+	border-radius: 100%;
+}
+.right-bottom{
+	width:100px;
+	height: 100px;
+	background-color: #FFCC00;
+	position: absolute;
+	right:-50px;
+	bottom:-50px;
+	border-radius: 100%;
+}

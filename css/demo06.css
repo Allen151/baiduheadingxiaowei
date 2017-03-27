@@ -266,14 +266,134 @@ body{
 	color:#f5e327;
 }
 
-
 #right{
 	float: right;
 	width:458px;
 	height: 620px;
-	border:2px solid red;
 }
-
+#right .righttop{
+	position: relative;
+	width: 458px;
+	height: 258px;
+	position: relative;
+}
+.canval{
+	width:458px;
+	height:61px ;
+	position: absolute;
+	bottom: 0px;
+	background-color: #000;
+	opacity: 0.4;
+}
+.flag{
+	position: absolute;
+	bottom:10px;
+	width: 280px;
+	height: 44px;
+	line-height: 44px;
+	margin-left:40px;
+	border-left:3px solid #72b16a;
+}
+.flag p{
+	margin: 0px;
+	font-size: 26px;
+	color:#fff;
+	font-family: "微软雅黑";
+	text-indent: 0.7em;
+}
+.flag p span{
+	margin: 10px;
+	font-size: 12px;
+	color:#72b16a ;
+	font-size: italic;
+}
+#end{
+	position: absolute;
+	width: 458px;
+	height: 310px;
+	margin-top:20px;
+	background-color: #EEEED6;
+}
+#end p{
+	margin: 20px;
+	font-size: 16px;
+	line-height: 30px;
+	font-family: "宋体";
+	text-align: left;
+}
+#leftbutton{
+	position: absolute;
+	left:0px;
+	bottom: 0px;
+	width: 260px;
+	height: 160px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	background-color:#D55D5C;
+}
+#leftbutton h1{
+	float: left;
+	color:#fff;
+	font-size: 110px;
+	font-family: "微软雅黑";
+	margin: 0px;
+	text-indent: 10px;
+	font-weight: normal;
+}
+#one{
+	float: right;
+	position: absolute;
+	left:80px;
+	top:32px;
+	width: 150px;
+	height: 86px;
+	border-left:2px solid #fff;
+}
+#one h1{
+	font-size: 21px;
+	color:#fff;
+	font-weight: normal;
+	font-style:italic;
+	line-height: 24px;
+}
+#one p{
+	font-size: 12px;
+	color:#fff;
+	line-height: 12px;
+}
+#two{
+	float: right;
+	position: absolute;
+	right:0px;
+	bottom:0px;
+	width: 185px;
+	height: 160px;
+}
+#two p{
+	margin: 0px;
+	font-size: 14px;
+	text-indent: 5em;
+}
+#two h1{
+	position: absolute;
+	float: left;
+	color: #d45d5c;
+	font-size: 72px;
+	top:30px;
+	left:0px;
+	margin: 0px;
+	line-height: 16px;
+}
+#two h2{
+	position: absolute;
+	float: left;
+	color: #d45d5c;
+	font-size: 72px;
+	bottom:30px;
+	right:0px;
+	margin: 0px;
+	line-height: 16px;
+}
 /*报纸下面的线*/
 #underline{
 	width: 892px;

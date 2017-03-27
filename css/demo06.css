@@ -1,14 +1,293 @@
 
 body{
-	background-color: #5D5D5D;
+	background-color: #5D5D5D;/*灰色的背景*/
 
 }
 
 #overall{
-	border:2px solid red;
 	width:980px;
 	height:1386px;
-	margin:80px auto;
-	background-color:#fff;
+	margin: 0px auto;
+	position: relative;
+	background-color:#fff;/*白色的报纸*/
+}
+#content{	/*将内容固定在白底的位置*/
+	width:892px;
+	position: absolute;
+	left:44px;
+}
 
+
+/*头部线*/
+#ceiling{
+	position: absolute;
+	width: 892px;
+	border-bottom: 2px solid #938e8c;
+}
+#ceiling .url{
+	position: absolute;
+	font-size: 12px;
+	color:#fff;
+	font-style: "黑体";
+	left:7px;
+	bottom:7px;
+}
+#ceiling div{
+	width:110px;
+	height:61px;
+	background-color:#D55D5C;
+}
+#ceiling .time{
+	font-size: 12px;
+	color:#d45d5c;
+	font-size: "黑体";
+	position: absolute;
+	right:0px;
+	bottom:7px;
+}
+
+/*上面的图片*/
+#top1{
+	position: relative;
+	margin-top: 97px;
+	width:892px;
+	height: 301px;
+}
+#box{
+	width: 641px;
+	height: 301px;
+	margin-right: 50px;
+	position: relative;
+}
+#box img{
+	z-index: 1;/*第几层*/
+}
+#box .green{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 191px;
+	height: 301px;
+	background-color:green;
+	z-index: 2;
+	opacity:0.25;/*不透明度*/
+}
+#box .red{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width: 191px;
+	height: 301px;
+	background-color:red;
+	z-index: 2;
+	opacity:0.25;
+	z-index: 2;
+}
+#headline{
+	position: absolute;
+	top: 0px;
+	right:0px;
+	margin-left: 50px;
+	border-top:2px solid #cc8091;
+	width:203px;
+	height: 301px;
+}
+#headline .title{
+	font-size: 24px;
+	font-family: "微软雅黑";
+	color:#000;
+	text-decoration: underline;
+	line-height: 40px;
+	margin: 0px 0px 0px 0px;
+}
+#headline .title:first-letter{
+	font-size: 30px;
+}
+#headline .digest{
+	font-size: 12px;
+	color:#676767;
+	font-family: "楷体";
+	line-height: 10px;
+	margin-top: 0px;
+}
+#headline .big{
+	font-size: 116px;
+	color:#75b86b;
+	margin-top: -10px;
+	font-family: "微软雅黑";
+	transform: skew(-15deg);
+}
+#digit{
+	font-size: 55px;
+	color:#D27D92;
+	font-family: "微软雅黑";
+	margin-top: -135px;
+}
+#css{
+	font-size: 21px;
+	color:#D27D92;
+	font-family: "微软雅黑";	
+}
+#csscss{
+	font-size: 12px;
+	color:#BBBBBB;
+	font-family: "微软雅黑";	
+}
+#forRight{
+	position: absolute;
+	bottom:0px;
+	left:80px;
+	width:10px;
+}
+/*contentall报纸的主要内容*/
+#contentall{
+	width:720px;
+	height: 190px;
+	margin-top:20px;
+}
+#contentall div{
+	float: left;
+	height: 180px;
+	margin: 10px 20px 0px 0px;
+}
+#essay1{
+	width: 240px;
+	margin-left:0px;
+}
+#essay1 h1{
+	color: #418c59;
+}
+#essay2{
+	width: 200px;
+}
+#essay2 h1{
+	color:#d2994f;
+}
+#essay3{
+	width: 150px;
+}#essay3 h1{
+	color:#cc7680;
+}
+#contentall h1{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: normal;
+	margin: 5px;
+}
+#contentall p{
+	font-size: 12px;
+	font-family: "宋体";
+	font-style: normal;
+	margin: 0px;
+	line-height: 16px;
+	opacity: 0.7;
+}
+#list{
+	margin-top:20px;
+}
+#list h2{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	font-style: normal;
+	margin: 0px;
+	line-height: 16px;
+	margin-top:10px;
+}
+#list h2 span{
+	color:#cd4a48;
+	font-style: italic;
+}
+
+/*报纸的下部分*/
+#underpast{
+	width: 892px;
+	height: 620px;
+	margin-top:55px;
+}
+#left{
+	float: left;
+	width: 415px;
+	height:620px;
+}
+#front{
+	width: 415px;
+	height: 150px;
+	border-bottom:2px solid #11456C;
+}
+#front h1{
+	font-size: 42px;
+	font-family: "黑体";
+	font-weight: bold;
+	color:#11456b;
+	line-height: 16px;
+}
+#front h1 span{
+	font-size: 72px;
+	font-family: "黑体";
+	font-weight: bold;
+	font-style: italic;
+	color:#f5e327;
+	margin: 0px;
+}
+#front p{
+	font-size: 33px;
+	font-family: "黑体";
+	font-weight: bold;
+	color:#11456b;
+	height: 20px;
+	line-height: 20px;
+}
+#techno{
+	width: 415px;
+	height: 440px;
+	margin-top: 20px;
+}
+#techno img{
+	float: right;
+	margin: 10px 0px 10px 10px;
+}
+#techno p{
+	font-size: 12px;
+	font-family: "宋体";
+	line-height: 16px;
+	color:#767777;
+	margin: 0px;
+	text-indent: 2em;
+}
+.especially{
+	text-indent: 0em;
+}
+#techno span{
+	float: left;
+	font-size: 70px;
+	font-family: "微软雅黑";
+	color:#f5e327;
+}
+
+
+#right{
+	float: right;
+	width:458px;
+	height: 620px;
+	border:2px solid red;
+}
+
+/*报纸下面的线*/
+#underline{
+	width: 892px;
+	height: 70px;
+	margin-top:10px;
+	border-top:1px solid #938e8c;
+	position: absolute;
+}
+#underline p{
+	font-size: 12px;
+	font-family: "黑体";
+	color:#d45d5c;
+	position: absolute;
+	margin-top: 0px;
+	top:0px;
+	right: 0px;
 }
